@@ -7,7 +7,6 @@
   align-items: center;
   text-align: center;
 
-  padding: 10px 32px;
   min-width: 200px;
   height: 50px;
   box-shadow: $btn-box-shadow;
@@ -16,7 +15,13 @@
   cursor: pointer;
 }
 .hero__btn {
-  min-width: 216px;
+  width: 200px;
+
+  @media screen and(min-width: 768px) {
+  }
+  @media screen and(min-width: 1200px) {
+    width: 216px;
+  }
 }
 .subscription__btn {
   margin-left: 12px;

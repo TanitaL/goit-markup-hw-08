@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  background-color: $primary-background-color;
+  color: $primery-text-color;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
+}
+html {
+  box-sizing: border-box;
+}
+/* *,
+*::before,
+*::after {
+    box-sizing: inherit;
+} */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+img {
+  display: block;
+  height: auto;
+  // До адаптації картинок
+  max-width: 100%;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+.link {
+  list-style: none;
+}
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and(min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and(min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
