@@ -1,0 +1,32 @@
+.btn {
+  @include font(700, 16px, 1.88, 0.06em);
+  color: $secondary-text-color;
+  background-color: $accent-color;
+
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+
+  padding: 10px 32px;
+  min-width: 200px;
+  height: 50px;
+  box-shadow: $btn-box-shadow;
+  border-radius: $border-radius;
+  border: transparent;
+  cursor: pointer;
+}
+.hero__btn {
+  min-width: 216px;
+}
+.subscription__btn {
+  margin-left: 12px;
+  margin-top: 0px;
+  padding: 10px 28px;
+}
+.checkbox__button {
+  display: block;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 52px;
+}

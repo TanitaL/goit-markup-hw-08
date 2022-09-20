@@ -1,0 +1,18 @@
+.logo {
+  @include font(700, 26px, 1.19, 0.03em);
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  width: 145px;
+  text-decoration: none;
+
+  &__style {
+    color: $accent-color;
+  }
+  &--color-black {
+    color: $logo-color-black;
+  }
+  &--color-white {
+    color: $logo-color-white;
+  }
+}

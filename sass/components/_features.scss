@@ -1,0 +1,24 @@
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.features__list {
+  display: flex;
+}
+.features__item:not(:last-child) {
+  margin-right: 30px;
+  max-width: 270px;
+}
+.features__decoration {
+  display: flex;
+  @extend %list;
+  width: 270px;
+  height: 120px;
+  background-color: $background-color-secondary-light;
+  border-radius: $border-radius;
+  margin-bottom: 30px;
+}
+.features__icon {
+  width: 70px;
+  height: 70px;
+}

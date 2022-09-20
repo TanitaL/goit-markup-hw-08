@@ -1,0 +1,28 @@
+.work {
+  padding-bottom: 94px;
+}
+.work__item {
+  display: flex;
+}
+.work__list {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+    max-width: 370px;
+  }
+}
+.work__text {
+  @include font(700, 14px, 1.14, 0.03em);
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  text-align: center;
+  color: $secondary-text-color;
+  background-color: $background-color-work-text;
+  /* text-transform: uppercase; */
+}

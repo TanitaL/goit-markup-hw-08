@@ -1,0 +1,34 @@
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: $background-color-secondary-light;
+}
+.team__list {
+  display: flex;
+}
+.team__card {
+  width: 270px;
+  background: $primary-background-color;
+  box-shadow: $team-card-box-shadow;
+  border-radius: $team-card-border-radius;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.team__item {
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.team__name {
+  @include font($lh: 1.19, $ls: 0.03em);
+  color: $title-and-nav-text-color;
+  text-align: center;
+}
+.team__position {
+  @include font($fw: 400, $lh: 1.19, $ls: 0.03em);
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
