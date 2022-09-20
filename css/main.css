@@ -5,7 +5,6 @@
 }
 
 .container {
-  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -146,12 +145,19 @@ ul {
 
 .title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   color: #212121;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
 
 .pre-title {
@@ -168,6 +174,21 @@ ul {
   margin-bottom: 10px;
   text-transform: uppercase;
   color: #212121;
+}
+@media screen and (min-width: 480px) {
+  .features__title {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .features__title {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__title {
+    text-align: left;
+  }
 }
 
 /* Common in social links */
@@ -383,23 +404,17 @@ ul {
   background-repeat: no-repeat;
   margin-right: auto;
   margin-left: auto;
-  width: 480px;
-  height: 400px;
   padding-top: 118px;
   padding-bottom: 118px;
 }
 @media screen and (min-width: 768px) {
   .hero {
-    width: 768px;
-    height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1200px;
-    height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -411,8 +426,6 @@ ul {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  width: 360px;
-  height: 84px;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
@@ -420,10 +433,8 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
-    width: 696px;
-    height: 120px;
     font-size: 44px;
-    line-height: 1.36px;
+    line-height: 1.36;
   }
 }
 
@@ -639,10 +650,6 @@ ul {
   gap: 30px;
 }
 
-.features__item:not(:last-child) {
-  margin-bottom: 30px;
-}
-
 .features__item {
   width: 100%;
 }
@@ -673,7 +680,6 @@ ul {
 }
 
 .work {
-  padding-bottom: 94px;
   display: none;
 }
 @media screen and (min-width: 768px) {
@@ -684,6 +690,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .work {
     display: block;
+    padding-bottom: 94px;
   }
 }
 

@@ -14,32 +14,17 @@
   margin-right: auto;
   margin-left: auto;
 
-  width: 480px;
-  height: 400px;
   padding-top: 118px;
   padding-bottom: 118px;
   @media screen and(min-width: 768px) {
-    width: 768px;
-    height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
   }
   @media screen and(min-width: 1200px) {
-    width: 1200px;
-    height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
   }
 }
-// .hero__container {
-//   // display: flex;
-//   // align-items: center;
-//   // justify-content: center;
-//   // margin-bottom: 0;
-
-//   // height: 100%;
-//   // width: 100%;
-// }
 .hero__title {
   color: $secondary-text-color;
   text-transform: uppercase;
@@ -47,20 +32,17 @@
   margin-right: auto;
   margin-bottom: 30px;
 
-  width: 360px;
-  height: 84px;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
   letter-spacing: 0.06em;
-  // text-align: center;
   @media screen and(min-width: 768px) {
+    // width: 360px;
+    // height: 84px;
   }
   @media screen and(min-width: 1200px) {
-    width: 696px;
-    height: 120px;
     font-size: 44px;
-    line-height: 1.36px;
+    line-height: 1.36;
   }
 }
 /* Modal window */

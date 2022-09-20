@@ -1,19 +1,21 @@
 // .features {
-// padding-top: 94px;
-// padding-bottom: 94px;
-
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+//   width: 450px;
+//   height: 994px;
+// }
 .features__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.features__item:not(:last-child) {
-  // margin-right: 30px;
-  // max-width: 270px;
+// .features__item:not(:last-child) {
+//   margin-right: 30px;
+//   max-width: 270px;
+//   margin-bottom: 30px;
+// }
 
-  margin-bottom: 30px;
-}
 .features__item {
   width: 100%;
   @media screen and(min-width: 768px) {
