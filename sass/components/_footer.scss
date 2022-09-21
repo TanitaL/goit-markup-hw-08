@@ -126,7 +126,7 @@
 }
 .subscription__email {
   display: block;
-  width: 450px;
+  width: 290px;
   height: 50px;
   padding: 15px 16px;
 
@@ -144,7 +144,15 @@
     font-size: 16px;
     color: $contacts-footer-color;
   }
-
+  // @media screen and(min-width: 320px) and(max-width: 470px) {
+  //   width: 320;
+  // }
+  @include mobile {
+    width: 450px;
+  }
+  @include tablet {
+    width: 450px;
+  }
   @include desktop {
     width: 358px;
   }

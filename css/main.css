@@ -684,20 +684,36 @@ ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 450px;
+  width: 300px;
   height: 609px;
   min-height: 0px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 40px;
+  padding: 10px;
+  padding-top: 40px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .modal__item {
+    width: 450px;
+    height: 609px;
+    padding: 40px;
+  }
+}
+@media screen and (min-width: 767.98px) {
+  .modal__item {
+    width: 450px;
+    height: 609px;
+    padding: 40px;
+  }
 }
 @media screen and (min-width: 1199.98px) {
   .modal__item {
     width: 528px;
     height: 581px;
+    padding: 40px;
   }
 }
 .backdrop.is-hidden .modal__item {
@@ -744,9 +760,19 @@ ul {
 
 /* Modal form */
 .form__field {
-  width: 370px;
+  width: 280px;
   /* height: 58px; */
   margin-bottom: 10px;
+}
+@media screen and (min-width: 480px) {
+  .form__field {
+    width: 370px;
+  }
+}
+@media screen and (min-width: 767.98px) {
+  .form__field {
+    width: 370px;
+  }
 }
 @media screen and (min-width: 1199.98px) {
   .form__field {
@@ -815,7 +841,7 @@ ul {
 
 .comments__textarea {
   display: block;
-  width: 370px;
+  width: 280px;
   height: 120px;
   background-color: transparent;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -837,6 +863,16 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+@media screen and (min-width: 480px) {
+  .comments__textarea {
+    width: 370px;
+  }
+}
+@media screen and (min-width: 767.98px) {
+  .comments__textarea {
+    width: 370px;
+  }
 }
 @media screen and (min-width: 1199.98px) {
   .comments__textarea {
@@ -873,9 +909,21 @@ ul {
 .checkbox__text {
   display: flex;
   align-items: center;
-  font-size: 12px;
-  line-height: 1.17;
+  font-size: 8px;
+  line-height: 1.25;
   color: #757575;
+}
+@media screen and (min-width: 480px) {
+  .checkbox__text {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+@media screen and (min-width: 767.98px) {
+  .checkbox__text {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 @media screen and (min-width: 1199.98px) {
   .checkbox__text {
@@ -1200,7 +1248,7 @@ ul {
 
 .subscription__email {
   display: block;
-  width: 450px;
+  width: 290px;
   height: 50px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1218,6 +1266,16 @@ ul {
   letter-spacing: 0.03em;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 480px) {
+  .subscription__email {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 767.98px) {
+  .subscription__email {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1199.98px) {
   .subscription__email {
