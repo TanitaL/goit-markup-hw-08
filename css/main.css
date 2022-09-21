@@ -1163,6 +1163,8 @@ ul {
   .footer {
     padding-top: 60px;
     padding-bottom: 60px;
+    padding-left: 215px;
+    padding-right: 215px;
   }
 }
 
@@ -1184,8 +1186,7 @@ ul {
 }
 @media screen and (min-width: 1600px) {
   .footer-container {
-    padding-right: 215px;
-    padding-left: 215px;
+    display: flex;
   }
 }
 
