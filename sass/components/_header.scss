@@ -106,6 +106,7 @@
   }
   @include desktop {
     display: flex;
+    flex-direction: row;
   }
 }
 .connect__mail {
