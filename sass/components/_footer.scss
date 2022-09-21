@@ -5,8 +5,16 @@
   @include tablet {
     padding-top: 60px;
     padding-bottom: 60px;
+    padding-left: 76px;
+    padding-right: 76px;
   }
   @include desktop {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  @media screen and(min-width: 1600px) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -23,8 +31,13 @@
   @include desktop {
     display: flex;
     align-items: baseline;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 0px;
+    padding-left: 0px;
+    justify-content: space-between;
+  }
+  @media screen and(min-width: 1600px) {
+    padding-right: 215px;
+    padding-left: 215px;
   }
 }
 
@@ -43,7 +56,14 @@
 //     align-items: baseline;
 //   }
 // }
-
+.footer__contacts-wrap {
+  @include tablet {
+    margin-right: 165px;
+  }
+  @include desktop {
+    margin-right: 0;
+  }
+}
 .footer__contacts {
   margin-top: 20px;
 
@@ -65,10 +85,19 @@
   .contacts__info-street &:focus {
     color: $accent-color;
   }
+  @include desktop {
+    display: flex;
+    align-items: flex-start;
+  }
 }
 .contacts__info-email {
   display: block;
   margin-bottom: 9px;
+
+  @include desktop {
+    display: flex;
+    align-items: flex-start;
+  }
 }
 .contacts__email {
   display: block;
@@ -95,6 +124,10 @@
   &:focus {
     color: $accent-color;
   }
+  @include desktop {
+    display: flex;
+    align-items: flex-start;
+  }
 }
 .footer-soc {
   display: block;
@@ -103,6 +136,11 @@
   margin-left: auto;
   margin-top: 60px;
 
+  @include tablet {
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 0;
+  }
   @include desktop {
     margin-left: 70px;
   }
@@ -112,6 +150,9 @@
   display: block;
   margin-top: 60px;
 
+  @media screen and(min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
   @include desktop {
     margin-left: 93px;
     width: 570px;
@@ -167,4 +208,16 @@
 }
 .subscription__title {
   display: block;
+  @include desktop {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.tablet-wrap {
+  @include tablet {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 0;
+  }
 }
