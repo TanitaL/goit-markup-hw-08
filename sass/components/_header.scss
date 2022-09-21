@@ -1,7 +1,15 @@
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border: $header-border;
+
+  @include tablet {
+  }
+
+  @include desktop {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 .header__container {
   display: flex;
@@ -14,6 +22,7 @@
 .navigation__list {
   display: flex;
   margin-left: 93px;
+  display: none;
 }
 .navigation__item {
   position: relative;
@@ -74,6 +83,7 @@
   display: flex;
   gap: 30px;
   margin-left: auto;
+  display: none;
 }
 .connect__mail {
   @include font($fs: null);

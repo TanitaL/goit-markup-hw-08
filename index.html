@@ -21,7 +21,7 @@
 
 <body>
     <!-- Шапка сайту -->
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header__container">
             <nav class="navigation">
                 <a href="./index.html" class="logo logo--color-black"><span class="logo__style">Web</span>Studio</a>
@@ -53,8 +53,64 @@
                         +38 096 111 11 11</a>
                 </li>
             </ul>
+            <!-- Menu open -->
+            <button type="button" class="header-open-menu">
+                <svg class="header-open-menu__icon" width="40px" height="40px">
+                    <use href="./images/icons.svg#icon-menu-open">
+                    </use>
+                </svg>
+            </button>
         </div>
-    </header> -->
+        <!-- Menu close -->
+        <div class="header-close-menu">
+            <div class="container header-close-menu__container">
+                <button type="button" class="header-close-menu__btn">
+                    <svg class="header-close-menu__icon" width="40px" height="40px">
+                        <use href="./images/icons.svg#icon-menu-close_24px"></use>
+                    </svg>
+                </button>
+                <nav>
+                    <ul class="header-close-menu__list list">
+                        <li class="header-close-menu__item">
+                            <a href="" class="header-close-menu__link link current">Студія</a>
+                        </li>
+                        <li class="header-close-menu__item">
+                            <a href="" class="header-close-menu__link link">Портфоліо</a>
+                        </li>
+                        <li class="header-close-menu__item">
+                            <a href="" class="header-close-menu__link link">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="header-close-menu__connect">
+                    <li>
+                        <a href="tel:+380961111111" class="header-close-menu__tel link">+38 096 111 11 11</a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@devstudio.com" class="header-close-menu__mail link">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="menu-socials">
+                    <li class="menu-socials__item">
+                        <a class="menu-socials__link" href="#" target="_blank"
+                            rel="noopener noreferrer nofollow">Instagram</a>
+                    </li>
+                    <li class="menu-socials__item">
+                        <a class="menu-socials__link" href="#" target="_blank"
+                            rel="noopener noreferrer nofollow">Twitter</a>
+                    </li>
+                    <li class="menu-socials__item">
+                        <a class="menu-socials__link" href="#" target="_blank"
+                            rel="noopener noreferrer nofollow">Facebook</a>
+                    </li>
+                    <li class="menu-socials__item">
+                        <a class="menu-socials__link" href="#" target="_blank"
+                            rel="noopener noreferrer nofollow">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
     <main>
         <!-- Hero -->
         <section class="hero">
@@ -138,6 +194,14 @@
                 <h2 class="team__title title">Наша команда</h2>
                 <ul class="team__list">
                     <li class="team__card">
+                        <picture>
+                            <source srcset="./images/our-team-1.jpeg 1x, ./images/our-team-1-2x.jpeg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/our-team-1-tab.jpeg 1x, ./images/our-team-1-tab-2x.jpeg 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./images/our-team-1-mob.jpeg 1x, ./images/our-team-1-mob-2x.jpeg 2x"
+                                media="(min-width: 320px)">
+                        </picture>
                         <img src="./images/our-team-a-man-with-a-laptop.jpeg" alt="Чоловік з ноутбуком" width="270">
                         <div class="team__item">
                             <h3 class="team__name">Ігор Дем'яненко</h3>
@@ -183,6 +247,14 @@
                         </div>
                     </li>
                     <li class="team__card">
+                        <picture>
+                            <source srcset="./images/our-team-2.jpeg 1x, ./images/our-team-2-2x.jpeg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/our-team-2-tab.jpeg 1x, ./images/our-team-2-tab-2x.jpeg 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./images/our-team-2-mob.jpeg 1x, ./images/our-team-2-mob-2x.jpeg 2x"
+                                media="(min-width: 320px)">
+                        </picture>
                         <img src="./images/our-team-a-woman-in-a-black-suit-jacket.jpeg" alt="Жінка у чорному піджаку"
                             width="270" height="260">
                         <div class="team__item">
@@ -229,6 +301,14 @@
                         </div>
                     </li>
                     <li class="team__card">
+                        <picture>
+                            <source srcset="./images/our-team-3.jpeg 1x, ./images/our-team-3-2x.jpeg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/our-team-3-tab.jpeg 1x, ./images/our-team-3-tab-2x.jpeg 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./images/our-team-3-mob.jpeg 1x, ./images/our-team-3-mob-2x.jpeg 2x"
+                                media="(min-width: 320px)">
+                        </picture>
                         <img src="./images/our-team-a-man-in-a-blue-shirt.jpeg" alt="Чоловік у блакитній сорочці"
                             width="270" height="260">
                         <div class="team__item">
@@ -275,6 +355,14 @@
                         </div>
                     </li>
                     <li class="team__card">
+                        <picture>
+                            <source srcset="./images/our-team-4.jpeg 1x, ./images/our-team-4-2x.jpeg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/our-team-4-tab.jpeg 1x, ./images/our-team-4-tab-2x.jpeg 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./images/our-team-4-mob.jpeg 1x, ./images/our-team-4-mob-2x.jpeg 2x"
+                                media="(min-width: 320px)">
+                        </picture>
                         <img src="./images/our-team-a-man-in-a-black-t-shirt.jpeg" alt="Чоловік у чорній футболці"
                             width="270" height="260">
                         <div class="team__item">
