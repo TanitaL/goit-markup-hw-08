@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.buttons-nav, .clients__link, .features__decoration, .checkbox__icon, .modal__close, .navigation__item, .soc__link, .header-close-menu__btn {
+.clients__link, .features__decoration, .checkbox__icon, .modal__close, .navigation__item, .soc__link, .header-close-menu__btn {
   align-items: center;
   justify-content: center;
 }
@@ -62,7 +62,6 @@ img {
   height: auto;
   width: 100%;
 }
-
 ul {
   list-style: none;
   margin: 0;
@@ -1384,8 +1383,18 @@ ul {
   padding-bottom: 94px;
 }
 
-.buttons-nav {
-  display: flex;
+@media screen and (min-width: 480px) {
+  .buttons-nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .buttons-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .examples__buttons-nav {

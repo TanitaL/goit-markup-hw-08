@@ -5,8 +5,16 @@
   // padding-bottom: 60px;
 }
 .buttons-nav {
-  display: flex;
-  @extend %list;
+  @include mobile {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @include desktop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .examples__buttons-nav {
   margin-bottom: 50px;

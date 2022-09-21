@@ -30,6 +30,10 @@ img {
   height: auto;
   // До адаптації картинок
   width: 100%;
+
+  @include mobile {
+    // height: 460px;
+  }
 }
 ul {
   list-style: none;
