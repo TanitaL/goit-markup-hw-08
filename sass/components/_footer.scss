@@ -1,31 +1,30 @@
 .footer {
   background-color: $background-color-secondary-dark;
-  padding: 60px 15px;
+  // padding: 60px 15px;
 
-  @include tablet {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 76px;
-    padding-right: 76px;
-  }
+  // @include tablet {
+  //   padding-top: 60px;
+  //   padding-bottom: 60px;
+  //   padding-left: 76px;
+  //   padding-right: 76px;
+  // }
   @include desktop {
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: 0px;
+    padding-left: 0px;
   }
-  @media screen and(min-width: 1600px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 215px;
-    padding-right: 215px;
-  }
+  // @media screen and(min-width: 1600px) {
+  //   padding-top: 60px;
+  //   padding-bottom: 60px;
+  //   padding-left: 215px;
+  //   padding-right: 215px;
+  // }
 }
 .footer-container {
   display: block;
   text-align: center;
   // width: 450px;
-  width: 100%;
 
   padding-right: 0;
   padding-left: 0;
@@ -35,9 +34,17 @@
     align-items: baseline;
     padding-right: 15px;
     padding-left: 15px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 1200px;
   }
   @media screen and(min-width: 1600px) {
     display: flex;
+    align-items: baseline;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 
@@ -67,8 +74,8 @@
 .footer__contacts {
   margin-top: 20px;
 
-  margin-right: auto;
-  margin-left: auto;
+  // margin-right: auto;
+  // margin-left: auto;
 }
 .contacts__info-street {
   margin-bottom: 9px;
