@@ -9,14 +9,9 @@
   gap: 30px;
 }
 .team__card {
-  // width: 270px;
   background: $primary-background-color;
   box-shadow: $team-card-box-shadow;
   border-radius: $team-card-border-radius;
-
-  // &:not(:last-child) {
-  //   margin-right: 30px;
-  // }
 
   width: 100%;
   @media screen and(min-width: 768px) {
@@ -26,6 +21,7 @@
     width: calc((100% - 90px) / 4);
   }
 }
+
 .team__item {
   align-items: center;
   padding-top: 30px;

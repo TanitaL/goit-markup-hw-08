@@ -1,9 +1,17 @@
-.header-close-menu__container {
-  width: 100%;
-}
 .header-open-menu {
   margin-left: auto;
-  color: $secondary-text-color;
+  background-color: $secondary-text-color;
+  border-color: transparent;
+
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+.header-close-menu__container {
+  width: 100%;
 }
 .header-close-menu {
   position: fixed;

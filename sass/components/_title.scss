@@ -20,6 +20,11 @@
   color: $secondary-text-color;
   margin-bottom: 20px;
   text-transform: uppercase;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
 }
 .features__title {
   @include font(700, 14px, 1.14, 0.03em);

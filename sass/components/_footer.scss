@@ -1,17 +1,54 @@
 .footer {
   background-color: $background-color-secondary-dark;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 15px;
+
+  @include tablet {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @include desktop {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 .footer-container {
-  display: flex;
-  align-items: baseline;
+  display: block;
+  text-align: center;
+  // width: 450px;
+  width: 100%;
+
+  padding-right: 0;
+  padding-left: 0;
+
+  @include desktop {
+    display: flex;
+    align-items: baseline;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
+
 .contacts {
   width: 231px;
 }
+
+// .footer__contacts-wrap {
+//   display: block;
+//   text-align: center;
+
+//   margin-left: auto;
+//   margin-right: auto;
+//   @include desktop {
+//     display: flex;
+//     align-items: baseline;
+//   }
+// }
+
 .footer__contacts {
   margin-top: 20px;
+
+  margin-right: auto;
+  margin-left: auto;
 }
 .contacts__info-street {
   margin-bottom: 9px;
@@ -30,6 +67,7 @@
   }
 }
 .contacts__info-email {
+  display: block;
   margin-bottom: 9px;
 }
 .contacts__email {
@@ -59,20 +97,36 @@
   }
 }
 .footer-soc {
-  margin-left: 70px;
+  display: block;
+
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 60px;
+
+  @include desktop {
+    margin-left: 70px;
+  }
 }
 /* Приєднуйтесь */
 .footer-join {
-  margin-left: 93px;
-  width: 570px;
-  height: 86px;
+  display: block;
+  margin-top: 60px;
+
+  @include desktop {
+    margin-left: 93px;
+    width: 570px;
+    height: 86px;
+    margin-top: 0;
+  }
 }
 .subscription__item {
-  display: flex;
+  @include desktop {
+    display: flex;
+  }
 }
 .subscription__email {
   display: block;
-  width: 358px;
+  width: 450px;
   height: 50px;
   padding: 15px 16px;
 
@@ -82,10 +136,17 @@
   background-color: transparent;
   color: $secondary-text-color;
 
+  margin-left: auto;
+  margin-right: auto;
+
   &::placeholder {
     @include font(400, 16px, 1.25, 0.03em);
     font-size: 16px;
     color: $contacts-footer-color;
+  }
+
+  @include desktop {
+    width: 358px;
   }
 }
 .subscription__icon {
@@ -95,4 +156,7 @@
   margin-left: 10px;
   vertical-align: middle;
   fill: $secondary-text-color;
+}
+.subscription__title {
+  display: block;
 }

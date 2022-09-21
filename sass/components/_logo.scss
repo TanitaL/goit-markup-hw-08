@@ -1,10 +1,22 @@
 .logo {
-  @include font(700, 26px, 1.19, 0.03em);
+  @include font(700, 24px, 1.17, 0.03em);
   display: block;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   width: 145px;
   text-decoration: none;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  @include tablet {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+  @include desktop {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 
   &__style {
     color: $accent-color;

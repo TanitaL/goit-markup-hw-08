@@ -72,8 +72,8 @@
   top: 50%;
   left: 50%;
 
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   min-height: 0px;
   background-color: $primary-background-color;
 
@@ -84,6 +84,11 @@
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include desktop {
+    width: 528px;
+    height: 581px;
+  }
 
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0.5);
@@ -127,17 +132,25 @@
 }
 /* Modal form */
 .form__field {
-  width: 448px;
+  width: 370px;
   /* height: 58px; */
   margin-bottom: 10px;
+
+  @include desktop {
+    width: 448px;
+  }
 }
 .form__item {
   position: relative;
 }
 .comments {
   display: block;
-  width: 448px;
+  width: 370px;
   height: 138px;
+
+  @include desktop {
+    width: 448px;
+  }
 }
 .modal__field {
   margin-bottom: 20px;
@@ -181,7 +194,7 @@
 }
 .comments__textarea {
   display: block;
-  width: 448px;
+  width: 370px;
   height: 120px;
   background-color: transparent;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -204,13 +217,21 @@
     @include font(400, 12px, 1.17, 0.01em);
     color: $comments-placeholder-color;
   }
+
+  @include desktop {
+    width: 448px;
+  }
 }
 /* Check-box */
 .checkbox {
   display: block;
-  width: 425px;
+  width: 370px;
   height: 24px;
   border: none;
+
+  @include desktop {
+    width: 425px;
+  }
 }
 .checkbox__wrap {
   margin-left: auto;
@@ -227,7 +248,16 @@
 .checkbox__text {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  color: $primery-text-color;
+
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .checkbox__icon {
   display: flex;
