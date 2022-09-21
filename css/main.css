@@ -218,6 +218,11 @@ ul {
 .header-close-menu__list {
   margin-bottom: 302px;
 }
+@media screen and (max-width: 450px) {
+  .header-close-menu__list {
+    margin-bottom: 150px;
+  }
+}
 
 .header-close-menu__item:not(:last-child) {
   margin-bottom: 32px;
@@ -273,7 +278,7 @@ ul {
 }
 @media screen and (max-width: 450px) {
   .menu-socials {
-    display: block;
+    display: flex;
     flex-wrap: wrap;
   }
 }
@@ -1154,8 +1159,8 @@ ul {
   .footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -1178,9 +1183,8 @@ ul {
   .footer-container {
     display: flex;
     align-items: baseline;
-    padding-right: 0px;
-    padding-left: 0px;
-    justify-content: space-between;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 @media screen and (min-width: 1600px) {
